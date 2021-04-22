@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:white;
+    background-image: url(https://images.unsplash.com/photo-1617944061733-5ed012ce7e5a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Raleway;
+}
+#header-img{
+    width: auto;
+    height: 150px;
+    cursor: pointer;
+}
+#nav-bar{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin: 0px;
+    position: fixed;
+    background-color: black;
+}
+#nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;   
+}
+ #nav-bar li a{
+    text-decoration: none;/*remove the existing text decoration or  line under the text*/
+    padding: 2rem 2rem;
+    color:white;
+    display: block;
+    width: 100%;
+}
+#nav-bar li :hover{
+    background-color:gray
+}
+h1{
+    padding-top: 30px;
+}
+.booking-page{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#submit{
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-family: Raleway;
+    font-weight: bold;
+}
+.page{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+#video{
+    text-align: center;
+}
+.hydraulic{
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.grid-container{
+    margin: 20px 50px 20px 50px;
+    padding: 0px;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: 1fr;
+    display: grid;
+    grid-column-gap: 40px;
+}
+#img-1{
+    width:350px;
+}
+#img-2{
+    width: 350px;
+}
+#img-3{
+    width: 350px;
+}
+    
+
+
+
