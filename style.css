@@ -8,8 +8,8 @@ body{
     background-color:white;
     background-image: url(https://images.unsplash.com/photo-1617944061733-5ed012ce7e5a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     background-size:cover;
-    max-width: 100%;
     background-repeat:no-repeat;
+    background-position: center center;
     color: white;
     font-family: Raleway;
 }
@@ -19,7 +19,7 @@ body{
     cursor: pointer;
 }
 #nav-bar{
-    width: 100%;
+    width: 100vw;
     align-items: center;
     display: flex;
     background-color:black;
@@ -64,7 +64,7 @@ body{
     margin: auto;
 }
 .grid-container{
-    margin: 20px 50px 20px 20px;
+    margin: 50px 50px 100px 50px;
     padding: 0px;
     grid-template-columns: repeat(3,400px);
     grid-template-rows: 1fr;
@@ -73,21 +73,30 @@ body{
     max-width: 100%;
     height: auto;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
     .grid-container{
       display: grid;
-      grid-template-columns: 1fr;
-      padding: 1em;
-      grid-row-gap: 100px;
+      grid-template-columns: 400px;
+      grid-template-rows: 400px 400px 400px;
+      grid-row-gap: 200px;
+      justify-content: center;
     }
+
 }
+.grid-item{
+    border: 1px solid white;
+    height: 550px;
+    background-color:#a4c3b2;
+}
+
 #figure{
-    max-width: 100%;
-    height: auto;
+    max-width: 400px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
-#figure-item{
-    width:100%;
-    height: 400px;
+#figure:hover{
+    transform:translateY(8px);
 }
 .costing-section{
     background-color:black;
@@ -96,4 +105,6 @@ body{
     display: flex;
     text-align:center;
     line-height: 1.5;
+    width: 100vw;
+    padding-bottom: 40px;
 }
